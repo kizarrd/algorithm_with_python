@@ -5,7 +5,7 @@ for _ in range(m):
     u,v = map(int,input().split())
     a[u].append(v)
     a[v].append(u)
-for i in range(n):
+for i in range(1, n+1):
     a[i].sort()
 
 def dfs(x):
