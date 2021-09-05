@@ -1,10 +1,10 @@
 from collections import deque
 
-n,m,start = map(int,input().split())
+n,m,start = map(int, input().split())
 a = [[] for _ in range(n+1)]
 check = [False] * (n+1)
 for _ in range(m):
-    u,v = map(int,input().split())
+    u,v = map(int, input().split())
     a[u].append(v)
     a[v].append(u)
 for i in range(1, n+1):
